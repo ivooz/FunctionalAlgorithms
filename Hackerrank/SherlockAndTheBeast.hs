@@ -16,8 +16,8 @@ alg :: Int -> Int
 alg x
     | x == 0 = 0
     | x<0 = -1
-    | div x 5 == 0 = x / 5
-    | otherwise = alg (x - 1)
+    | mod x 3 == 0 = x
+    | otherwise = alg (x - 5)
 
 resolve x n
     | x == -1 = "-1"
