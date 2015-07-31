@@ -1,0 +1,1 @@
+def f(delim:Int,arr:List[Int]) : List[Int] = arr.foldLeft(List[Int]())((a : List[Int],b : Int) => if(b<delim) a :+ b else a)
